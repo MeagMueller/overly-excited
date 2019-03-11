@@ -76,10 +76,30 @@
 
 // Add a new argument to the function so that a developer can specify how many times the special character should be added.
 
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+    
+
+//         function addExcitement (theWordArray, symbol, multiply) {
+//             let buildMeUp = ""
+        
+//             for (let i = 0; i < theWordArray.length; i++) {
+//                 if((i + 1) % 3 === 0) {
+//                     buildMeUp += theWordArray[i] + symbol.repeat(multiply) + " "; 
+//                 } else {
+//                     buildMeUp += theWordArray[i] + " "
+//                 }
+//                 console.log(buildMeUp)
+//             }
+//         }
+
+// addExcitement(sentence, "*", 4)
+
+// Challenges are optional exercises that you can work once you've completed all the practice exercises and understand the concepts in them.
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
     
 
-        function addExcitement (theWordArray, symbol, multiply) {
+        addExcitement((theWordArray, symbol, multiply) => {
             let buildMeUp = ""
         
             for (let i = 0; i < theWordArray.length; i++) {
@@ -90,6 +110,6 @@ let sentence = ["The","walrus","danced","through","the","trees","in","the","ligh
                 }
                 console.log(buildMeUp)
             }
-        }
+        })
 
 addExcitement(sentence, "*", 4)
