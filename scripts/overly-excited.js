@@ -36,15 +36,35 @@
          */
         // Print buildMeUp to the console
 
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+        
+
+//         function addExcitement (theWordArray) {
+//             let buildMeUp = ""
+        
+//             for (let i = 0; i < theWordArray.length; i++) {
+//                 if((i + 1) % 3 === 0) {
+//                     buildMeUp += theWordArray[i] + "! "
+//                 } else {
+//                     buildMeUp += theWordArray[i] + " "
+//                 }
+//                 console.log(buildMeUp)
+//             }
+//         }
+
+// addExcitement(sentence)
+
+// Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
         
 
-        function addExcitement (theWordArray) {
+        function addExcitement (theWordArray, symbol) {
             let buildMeUp = ""
         
             for (let i = 0; i < theWordArray.length; i++) {
                 if((i + 1) % 3 === 0) {
-                    buildMeUp += theWordArray[i] + "! "
+                    buildMeUp += theWordArray[i] + symbol + " "; 
                 } else {
                     buildMeUp += theWordArray[i] + " "
                 }
@@ -52,4 +72,7 @@ let sentence = ["The","walrus","danced","through","the","trees","in","the","ligh
             }
         }
 
-addExcitement(sentence)
+addExcitement(sentence, "?")
+
+// Add a new argument to the function so that a developer can specify how many times the special character should be added.
+
